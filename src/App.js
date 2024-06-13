@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import TaskList from './components/TaskList';
 
 function App() {
+  let token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2NWM1ZTU2NDNiMDE2ZWI1Mzc3ODI0MCIsImlhdCI6MTcxODI3NjQwNCwiZXhwIjoxNzE4NzA4NDA0fQ.fCyizDvrf3aDpQyxpjXCgVByklX4LmpdIi3QFMi_5tU"
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dashboard</h1>
+     <TaskList token = {token}/>
     </div>
   );
 }
